@@ -59,3 +59,11 @@ router.get('/dashboard-data', (req, res) => {
 });
 
 module.exports = router;
+
+// Static category list
+const categories = ['Electronics', 'Home', 'Fashion', 'Books', 'Beauty'];
+
+// GET categories
+router.get('/categories', (req, res) => {
+  res.json(categories);
+});
